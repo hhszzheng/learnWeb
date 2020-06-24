@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form表单</title>
+    <style>
+        form{
+            width: 100%;
+            max-width: 400px;
+            min-width: 200px;
+            margin: 0 auto;
+            font-family: "Microsoft Yahei";
+            font-size: 20px;
+        }
+        input{
+            display: block;
+            width: 100%;
+            height: 30px;
+            margin: 10px 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>表单事件</legend>
+            <label>
+                邮箱<input type="email" id="txt1">
+                统计<input type="text" id="txt2">
+            </label>
+            <input type="submit">
+        </fieldset>
+    </form>
+
+
+    <audio src="../04-标签图文内嵌多媒体/周杰伦 - 爱我别走.mp3" autoplay controls>音频</audio>
+    <p></p>
+    <video src="../04-标签图文内嵌多媒体/周杰伦 - 爱我别走.mp3" autoplay controls>视频√</video>
+</body>
+
+<script>
+    var txt1 = document.getElementById('txt1');
+    var txt2 = document.getElementById('txt2');
+    var num = 0;
+    txt1.oninput = function(){
+        num++;
+        txt2.value = num;
+    }
+    txt1.oninvalid = function(){
+        this.setCustomValidity('请输入正确哦！')
+    }
+</script>
+
+
+</html>

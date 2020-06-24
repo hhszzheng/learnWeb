@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04-标签图文内嵌</title>
+</head>
+<body>
+
+    <a href="文字页面.html" target="myframe">默认显示文字页面</a><br>
+ 	<a href="图片页面.html" target="myframe">点击进入图片页面</a><br>
+ 	<a href="表格页面.html" target="myframe">点击进入表格页面</a><br>
+
+
+    哈哈
+    <iframe src="文字页面.html" width="400" height="400" name="myframe"></iframe>
+    
+    <form action="">
+        姓名:<input value="呵呵">逗比<br>
+        昵称:<input value="呵呵" readonly><br>
+        名字:<input type="text" value="Jay" disabled=""><br>
+        密码:<input type="password" value="pwd" size="50"><br>
+        性别:<input type="radio" name="gender" id="radio1" value="male" checked="">男
+           <input type="radio" name="gender" id="radio2" value="female" checked="">女<br>
+        爱好:<input type="checkbox" name="love" value="eat">吃饭
+            <input type="checkbox" name="love" value="sleep">睡觉
+            <input type="checkbox" name="love" value="bat">打豆豆
+    </form>
+    
+
+    <form>
+		<input type="button" value="普通按钮"><br>
+		<input type="submit"  value="提交按钮"><br>
+		<input type="reset" value="重置按钮"><br>
+		<input type="image" value="图片按钮1"><br>
+		<input type="image" src="firefox-icon.png" width="100" value="图片按钮2"><br>
+		<input type="file" value="文件选择框">
+    </form>
+
+    <br><br><br>
+    
+    <form action="">
+        <select>
+            <option value="">小学</option>
+            <option value="">初中</option>
+            <option value="">高中</option>
+            <option value="">大学</option>
+            <option value="" selected="">研究生</option>
+        </select>
+        <br><br><br>
+        <select size="3">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+        </select>
+        <br><br><br>
+
+
+
+        <select multiple="">
+			<option>小学</option>
+			<option>初中</option>
+			<option selected="">高中</option>
+			<option selected="">大学</option>
+			<option>研究生</option>
+		</select>
+		<br><br><br>
+    </form>
+
+
+    <form action="">
+        <textarea name="我是textarae" rows="4" cols="20">1、不爱摄影不懂设计的程序猿不是一个好的产品经理。</textarea>
+    </form>
+
+    <br><br><br>
+
+    <form action="">
+
+        <fieldset>
+            <legend>账号信息</legend>
+            账号:<input value="哈哈">
+            密码:<input type="password" value="123" size="50">
+        </fieldset>
+
+        <input type="radio" name="sex" id="nan" /> <label for="nan">男</label>
+        <input type="radio" name="sex" id="nv"  /> <label for="nv">女</label>
+        <br><br><br>
+        <input type="checkbox" id="kk" /><label for="kk">10天内免登陆</label>
+        
+    </form>
+
+
+    <!--
+
+        <embed src="周杰伦 - 爱我别走.mp3" type="">
+    -->
+
+    <br><br><br>
+    <video src="周杰伦 - 爱我别走.mp3"></video>
+
+
+</body>
+</html>
