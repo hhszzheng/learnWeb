@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html详解二</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box" draggable="true">
+    </div>
+</body>
+
+<script>
+    var box = document.querySelector('.box');
+    box.ondragstart = function() {
+        console.log('拖拽开始');
+    }
+    box.ondragleave = function() {
+        console.log('拖拽离开');
+    }
+    //  拖拽结束
+    box.ondragend = function () {
+        console.log('拖拽结束...');
+        console.log("---------------");
+    }
+
+    box.ondrag = function () {
+        console.log('拖拽');
+    }
+
+    
+
+    
+
+
+
+
+</script>
+
+
+
+</html>
