@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器</title>
+    <style >
+
+        /* 后代选择器 */
+        div p{
+            color: red;
+        }
+        /* 交集选择器 */
+        h3.special{
+            color: yellow;
+        }
+        p,h1,#llla,.one{
+            color: turquoise;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <p id="haha"></p>
+    <p class="lalala"></p>
+
+    <div>
+        <p>我是后代标签</p>
+    </div>
+    
+    <h3 class="special zhongyao">标题1</h3>
+	<h3 class="special">我也是标题</h3>
+    <p>我是段落</p>
+    
+
+    <h1 class="one">我是h1</h1>
+    <h2 id="hhh">追我👌</h2>
+    <h3 id="llla">我是h3</h3>
+
+    
+</body>
+</html>

@@ -1,0 +1,77 @@
+/* /* p,h1{
+    color: blue;
+    border: 1px solid black;
+}
+img[src]{
+    border: 5px solid red;
+} */
+
+
+html {
+    /* px 表示 “像素（pixels）”: 基础字号为 10 像素 */
+    font-size: 10px; 
+    /* Google fonts 输出的 CSS */
+    font-family: 'Open Sans', sans-serif; 
+}
+
+h1{
+    font-size: 100px;
+    text-align: center;
+}
+
+p,li{
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+html{
+    background-color: red;
+}
+
+
+/* 浏览器会自动选择一个合适的margin来应用。它可以用于将一个块居中。
+比如，div { width:50%;  margin:0 auto; } 会把这个div容器水平居中。
+只有一个  值时，这个值会被指定给全部的 四个边.
+两个 值时，第一个值被匹配给 上和下, 第二个值被匹配给 左和右.
+三个 值时，第一个值被匹配给 上, 第二个值被匹配给 左和右, 第三个值被匹配给 下.
+四个 值时，会依次按 上、右、下、左 的顺序匹配 (即顺时针顺序).*/
+body{
+    width: 600px;
+    margin: 0 auto;
+    background-color: #FF9500;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
+
+
+
+/* 这里使用了一个 text-shadow 属性，它可以为元素中的文本提供阴影。四个值含义如下：
+ 第一个值设置水平偏移值 —— 即阴影右移的像素数（负值左移）。
+ 第二个值设置垂直偏移值 —— 即阴影下移的像素数（负值上移）。
+ 第三个值设置阴影的模糊半径 —— 值越大产生的阴影越模糊。
+ 第四个值设置阴影的基色。 */
+ h1{
+     margin: 0;
+     padding: 20px 0;
+     color: #00539F;
+     text-shadow: -3px -3px 3px black;
+ }
+ 
+
+
+
+
+ /* 图片是内联元素，不具备块级元素的一些功能。所以为了使图像有外边距，我们必须使用 display: block 给予其块级行为。 */
+img{
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+ */
+
+
+
+
