@@ -4,11 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>权重计算</title>
+
+
+
+    <!-- 权重 1.从第一位开始比较  依次往后排列   2.权重相同时候 以后面的为准  -->
+    <!-- id:1 类:1 标签:1    1:1:1 -->
+    <!-- id:1 类:0 标签:3    1:0:3 -->
+    <!-- id:0 类:3 标签:4    0:3:4 -->
+
+
+    <style type="text/css">
+    #box1 .hezi2 p{
+        color: red;
+    }
+    div div #box3 p{
+        color: green;
+    }
+    div.hezi1 div.hezi2 div.hezi3 p{
+        color: blue;
+    }
+    .hezi ul li{
+        color: blue;
+    }
+    .hezi ul li.teshu{
+        color: red;
+    }
+
+
+
+    </style>
+
+
 </head>
 <body>
-    <div>
+
+    <div class="hezi1" id="box1">
+        <div class="hezi2" id="box2">
+            <div class="hezi3" id="box3">
+                <p>猜我是什么颜色？</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="hezi">
         <ul>
-            <li>11</li>
+            <li class="teshu">11</li>
             <li>22</li>
             <li>33</li>
             <li>44</li>
