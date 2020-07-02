@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css盒子</title>
+    <style type="text/css">
+    div{
+        width: 100px;
+        height: 100px;
+        /* border: 1px solid red; */
+        padding: 50px;
+        margin: 25px;
+        /* background-color: pink; */
+    }
+    /* 什么简单用什么。但要懂得，用小属性层叠大属性。 */
+    .one{
+        padding-top: 30px;
+        padding-right: 40px;
+        padding-bottom: 20px;
+        padding-left: 50px;
+        
+        border: 10px solid #000;
+
+        border-width:10px 20px;
+        border-style:solid dashed dotted;
+        border-color:red green blue yellow;
+    }
+    .sanjiao{
+        width: 0  !important;
+        height: 0 !important;
+        border-top: 30px solid red;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="one">有生之年</div>
+    <div>下路相逢</div>
+    <div class="sanjiao"></div>
+    
+</body>
+</html>
