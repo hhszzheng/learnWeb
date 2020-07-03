@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动</title>
+    <style type="text/css">
+    h1{
+        background-color: pink;
+        width: 500px;
+        height: 80px;
+    }
+    span{
+        display: block;
+        background: red;
+        width: 500px;
+        height: 80px;
+    }
+    div{
+        background-color: red;
+        display: inline;
+        width: 500px;
+        height: 80px;
+
+    }
+    h2{
+        background-color: pink;
+        display: inline;
+        width: 500px;
+        height: 80px;
+    }
+
+
+    </style>
+</head>
+<body>
+
+
+    <!-- 行内元素和块级元素的区别：（非常重要）
+    行内元素：
+    - 与其他行内元素并排；
+    - 不能设置宽、高。默认的宽度，就是文字的宽度。
+
+    块级元素：
+    - 霸占一行，不能与其他任何元素并列；
+    - 能接受宽、高。如果不设置宽度，那么宽度将默认变为父亲的100%。 -->
+
+
+
+    <!-- 从HTML的角度来讲，标签分为：
+
+    - 文本级标签：p、span、a、b、i、u、em。
+    - 容器级标签：div、h系列、li、dt、dd。
+    PS：为甚么说p是文本级标签呢？因为p里面只能放文字&图片&表单元素，p里面不能放h和ul，p里面也不能放p。
+
+    现在，从CSS的角度讲，CSS的分类和上面的很像，就p不一样：
+    - 行内元素：除了p之外，所有的文本级标签，都是行内元素。p是个文本级，但是是个块级元素。
+    - 块级元素：所有的容器级标签都是块级元素，还有p标签。 -->
+
+
+
+    <h1>内容1</h1>
+    <h1>内容2</h1>
+    <span>内容3</span>
+    <span>内容4</span>
+
+    <div>div1</div>
+    <div>div2</div>
+    <h2>我是h2标题</h1>
+</body>
+</html>
