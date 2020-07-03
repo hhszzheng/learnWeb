@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位属性</title>
+
+    <!-- position: absolute;  绝对定位 绝对定位的盒子脱离了标准文档流。 如果用top描述，那么参考点就是页面的左上角，而不是浏览器的左上角：
+        如果用bottom描述，那么参考点就是浏览器首屏窗口尺寸（好好理解“首屏”二字），对应的页面的左下角：
+	     position: relative;  相对定位 -  不脱标，老家留坑，别人不会把它的位置挤走。也就是说，相对定位的真实位置还在老家，只不过影子出去了，可以到处飘（1）微调元素2）做绝对定位的参考，子绝父相
+
+         position: fixed;     固定定位 -->
+         
+         <style type="text/css">
+
+            body{
+                margin: 0px;
+            }
+    
+            .div1{
+                width: 200px;
+                height: 200px;
+                border: 1px solid red;
+            }
+    
+            .div2{
+                position: relative;/*相对定位：相对于自己原来的位置*/
+                left: 50px;/*横坐标：正值表示向右偏移，负值表示向左偏移*/
+                top: 50px;/*纵坐标：正值表示向下偏移，负值表示向上偏移*/
+    
+                width: 200px;
+                height: 200px;
+                border: 1px solid red;
+            }
+        </style>
+</head>
+<body>
+
+    <div class="div1">有生之年</div>
+	<div class="div2">狭路相逢</div>
+    
+</body>
+</html>
