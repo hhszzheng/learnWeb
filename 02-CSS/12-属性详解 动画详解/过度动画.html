@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>过渡动画</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            margin: 100px auto;
+
+            /* transition: 让哪些属性进行过度 过渡的持续时间 运动曲线 延迟时间; */
+            /* transition: width 2s linear 0s; */
+            transition: all 2s linear 0s;
+        }
+        .box:hover{
+            width: 500px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    
+</body>
+</html>

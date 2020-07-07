@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../vue.js"></script>
+</head>
+<body>
+    <div id="box">
+        <button @click="handleClick()">click</button>
+        <div v-if="isCreated"> 动态创建和删除111 </div>
+        <div v-show="isShow">动态显示也隐藏</div>
+    </div>
+
+    <script type="text/javascript">
+    
+    var vm = new Vue({
+        el:"#box",
+        data:{
+            isCreated:false,
+            isShow:true,
+        },
+        methods:{
+            handleClick(){
+                this.isCreated = !this.isCreated
+            }
+        }
+    })
+    </script>
+
+
+
+</body>
+</html>

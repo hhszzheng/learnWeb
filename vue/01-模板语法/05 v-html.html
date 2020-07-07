@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-html</title>
+</head>
+<body>
+    <script src="../vue.js"></script>
+    
+    <div id="box">
+        {{message}}
+        <h2 v-text="content"></h2>
+        <p v-html="content"></p>
+    </div>
+    <script>
+        var app = new Vue({
+            el:"#box",
+            data:{
+                message:"🈶",
+                content:"<a href='http://www.baidu.com'>百度</a>"
+            }
+        })
+    </script>
+</body>
+</html>

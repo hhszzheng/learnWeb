@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data数据对象</title>
+</head>
+<body>
+    <script src="../vue.js"></script>
+    <div id="app">
+        {{ message }}
+        <h2>{{ school.mobile }}</h2>
+        <ul>
+            <li>{{campus[0]}}</li>
+            <li>{{campus[1]}}</li>
+            <li>{{campus[2]}}</li>
+        </ul>
+    </div>
+    <script>
+        var app = new Vue({
+            el:"#app",
+            data:{
+                message:"你好小黑",
+                school:{
+                    name:"青岛院士港",
+                    mobile:"13532345664"
+                },
+                campus:["市南区","市北区","崂山区","李沧区"]
+
+            }
+        })
+    </script>
+</body>
+</html>
