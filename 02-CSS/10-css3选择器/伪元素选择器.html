@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3选择器</title>
+    <style>
+        span::before{
+            content: "smyhave";
+            color:red;
+            background-color: pink;
+            width: 100px;
+            height: 50px;
+            display: inline-block;
+        }
+        span::after{
+            content:"永不止步";
+            color:yellowgreen;
+        }
+
+        /*给原本的span标签设置一个默认的属性*/
+        span{
+            border: 1px solid #000;
+        }
+
+    </style>
+</head>
+<body>
+    <span>生命一号</span>
+    
+</body>
+</html>

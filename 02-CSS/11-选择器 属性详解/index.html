@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器属性详解</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 400px;
+            margin: 20px auto;
+            border: 2px solid red;
+            background: -webkit-linear-gradient(left,green,yellow);
+        }
+        .box1 {
+            width: 100px;
+            height: 100px;
+            float: left;
+            border: 1px solid rgb(144, 12, 63);
+            margin: 20px;
+            text-align: center;
+            line-height: 100px;
+            color: #fff;
+            font-size: 50px;
+            background-color: rgb(255, 141, 26);
+            /* border-radius: 50px; */
+            /* border-radius: 50%; */
+            /* //从左上开始，顺时针赋值。如果当前角没有值，取对角的值 */
+            border-radius: 20px 60px 100px 140px;
+            /* box-shadow: 水平偏移 垂直偏移 模糊程度 阴影大小 阴影颜色 */
+            /* inset */
+            /* 后面还可以再加一个inset属性，表示内阴影。如果不写，则默认表示外阴影 */
+            box-shadow: 15px 21px 48px -2px #666 inset;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box">0</div>
+    <div class="box1">1</div>
+</body>
+</html>
